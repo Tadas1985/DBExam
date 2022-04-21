@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tadas.valutis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tadas.valutis\\.nuget\\packages"
+    ]
+  }
+}
