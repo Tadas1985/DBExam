@@ -21,7 +21,7 @@ namespace DBexam.Models
                 "[6]\tCreate relationship between lecture and student\n" +
                 "[7]\tShow all students in the department\n" +
                 "[8]\tShow all lectures in the department\n" +
-                "[9]\tShow all lectures that belongs to a student\n\n" +
+                "[9]\tShow all lectures that belongs to a student\n" +
                 "[10]\tMove student to another department\n\n" +
                 "[11]\tExit menu");
 

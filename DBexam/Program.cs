@@ -52,7 +52,6 @@ namespace DBexam
                 }
             }
         }
-        //---------------------------------------------
         public static void ShowAllLecturesInDepartment()
         {
             PrintAllDepartments();
@@ -67,7 +66,6 @@ namespace DBexam
                 }
             }
         }
-        //-------------------------------------------------------
         public static void PrintAllLectures()
         {
             Console.WriteLine("Lectures:");
@@ -105,31 +103,6 @@ namespace DBexam
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Student Information System");
-
-            //using var DbContext = new UniversityContext();
-
-            //var economy = new Department( "Economy");
-            //DbContext.DepartmentSet.Add(economy);
-            //DbContext.SaveChanges();
-
-
-
-            //var student = new Student("T", "V");
-            //student.DP = economy;
-            //DbContext.StudentSet.Add(student);
-            //DbContext.SaveChanges();
-
-            //var lecture = new Lecture("Biology");
-            
-            //lecture.Deparetments.Add(economy);
-            //DbContext.LectureSet.Add(lecture);
-
-
-            //DbContext.SaveChanges();
-
-            //var economy = new Department(new Guid("C333452A-BC16-4772-9570-67A4B7EF5880"));
-            //DbContext.DepartmentSet.Remove(economy);
-            //DbContext.SaveChanges();
 
             while (true) 
             {
@@ -296,10 +269,6 @@ namespace DBexam
                 {
                     student.DP = department;
                     student.LecturesList.Clear();
-                    //foreach (var lecture in student.LecturesList.ToList())
-                    //{
-                    //    student.LecturesList.Remove(lecture);
-                    //}
                     foreach (var lecture in department.Lectures)
                     {
                         student.LecturesList.Add(lecture);
