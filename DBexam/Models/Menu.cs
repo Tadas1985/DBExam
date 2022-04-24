@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DBexam.Models
 {
@@ -25,7 +22,6 @@ namespace DBexam.Models
                 "[10]\tMove student to another department\n\n" +
                 "[11]\tExit menu");
 
-
             var optionSelected = readInt();
             return optionSelected;
         }
@@ -33,7 +29,6 @@ namespace DBexam.Models
         {
             if (int.TryParse(Console.ReadLine(), out int result))
             {
-
                 return result;
             }
             else
@@ -42,9 +37,7 @@ namespace DBexam.Models
                 Console.WriteLine("Please enter a valid choise");
                 Console.ReadKey();
                 return 0;
-
             }
-
         }
         public static void Exit()
         {

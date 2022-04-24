@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DBexam.Models
 {
@@ -26,9 +24,6 @@ namespace DBexam.Models
             FirstName = firstName;
             LastName = lastName;
             LecturesList = new List<Lecture>();
-
-        }
-
-        
+        }       
     }
 }

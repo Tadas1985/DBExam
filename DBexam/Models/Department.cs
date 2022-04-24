@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DBexam.Models
 {
     public class Department
     {
-        //[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerat‌ed(System.ComponentM‌​odel.DataAnnotations‌​.Schema.DatabaseGeneratedOp‌​tion.None)]
         [Key]
         [DatabaseGenerat‌ed(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
@@ -22,11 +19,6 @@ namespace DBexam.Models
             Name = name;
             Lectures = new List<Lecture>();
             Students = new List<Student>();
-        }
-
-       
-
-        
+        }      
     }
-
 }

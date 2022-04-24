@@ -1,6 +1,5 @@
 ﻿using DBexam.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
 using System.Linq;
 
@@ -141,13 +140,7 @@ namespace DBexam
                         break;
                     case 11:
                         Menu.Exit();
-                        break;
-                    
-
-
-
-
-        
+                        break;       
                 }
             }
         }
@@ -170,8 +163,6 @@ namespace DBexam
                 }
             }
             GetContext().SaveChanges();
-
-
         }
 
         private static void AddLecture()
@@ -230,8 +221,6 @@ namespace DBexam
                 }
             }
             GetContext().SaveChanges();
-
-
         }
 
         private static void CreateRelationshipBetweenStudentAndLecture()
@@ -252,8 +241,6 @@ namespace DBexam
                 }
             }
             GetContext().SaveChanges();
-
-
         }
         private static void MoveStudentToAnotherDepartment()
         {
@@ -278,8 +265,6 @@ namespace DBexam
                 }
             }
             GetContext().SaveChanges();
-
-
         }
     }
 }
